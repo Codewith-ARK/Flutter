@@ -1,6 +1,6 @@
 # Flutter Practice Code
 The following repository contains all my example projects I've worked on.
-- - -
+
 ## Download Dependencies
 Once you pull the code. You will have to run a flutter command. That automatically downloads all the dependencies into the project folder
 
