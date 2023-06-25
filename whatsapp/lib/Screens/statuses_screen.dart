@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'database.dart';
+import '../database.dart';
 
 class Statuses extends StatefulWidget {
   const Statuses({super.key});
@@ -53,11 +53,9 @@ class _StatusesState extends State<Statuses> {
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.camera_alt),
+        tooltip: "Add a status",
         onPressed: () {
-          setState(() {
-            name.add('New Chat');
-            chats.add('What\'s up Man');
-          });
+          
         },
       ),
     );

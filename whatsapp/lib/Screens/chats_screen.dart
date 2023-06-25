@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/chat.dart';
+import 'chat.dart';
 import 'package:get/get.dart';
 
-import 'database.dart';
+import '../../database.dart';
 
 class Chats extends StatefulWidget {
   const Chats({super.key});
@@ -41,6 +41,7 @@ class _ChatsState extends State<Chats> {
       ),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
+        tooltip: "Create a new chat",
         onPressed: () {
           setState(() {
             name.add('New Chat');

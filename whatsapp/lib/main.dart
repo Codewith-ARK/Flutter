@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:whatsapp/statuses.dart';
 import 'package:get/get.dart';
 
-import 'calls.dart';
-import 'chats.dart';
+import 'Screens/chats_screen.dart';
+import 'Screens/statuses_screen.dart';
+import 'Screens/calls.dart';
 
 main() => runApp(const WhatsApp());
 
@@ -61,9 +61,6 @@ class _WhatsAppState extends State<WhatsApp> {
               Chats(),
               Statuses(),
               Calls(),
-              Center(
-                child: Text("Calls"),
-              ),
             ],
           ),
         ),

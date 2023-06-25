@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
-import 'database.dart';
+import '../database.dart';
 
-class Calls extends StatefulWidget {
+class Calls extends StatelessWidget {
   const Calls({super.key});
 
   @override
-  State<Calls> createState() => _CallsState();
-}
-
-class _CallsState extends State<Calls> {
-  @override
   Widget build(BuildContext context) {
+    // Gets the current date & time
     final currentTime = DateTime.now();
+    // formats the above date so that only hour and minutes are left
     final hour = currentTime.hour.toString().padLeft(2, '0');
     final minute = currentTime.minute.toString().padLeft(2, '0');
+
     return Scaffold(
       // List View Builder
       body: SingleChildScrollView(
@@ -34,7 +32,7 @@ class _CallsState extends State<Calls> {
             ),
             const Padding(
               padding: EdgeInsets.all(12.0),
-              child: Text("Recents", textAlign: TextAlign.left),
+              child: Text("Recent", textAlign: TextAlign.left),
             ),
             Expanded(
               child: ListView.builder(
