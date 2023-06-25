@@ -1,0 +1,100 @@
+
+:root {
+    --main-heading-color: #fff;
+    --container-border-radius: 8px;
+}
+body{
+    margin: 50px 80px 0;
+}
+
+.main-text-container {
+    text-align: center;
+    background-image: linear-gradient(180deg, #A020F0 0%, rgba(217, 217, 217, 0) 100%);
+    height: 240px;
+    padding: 32px;
+    color: var(--main-heading-color);
+    border-radius: var(--container-border-radius);
+}
+.card-heading {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.date {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #D9D9D9;
+    font-weight: 700;
+}
+.elipse {
+    margin: auto 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+    display: inline-block;
+}
+.card>h2, .card>p {
+    margin: 0 0 12px;
+    text-align: justify;
+}
+.card {
+    width: 330px;
+    border: 1px solid #666666;
+    padding: 24px;
+    border-radius: 8px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+    transition: 0.5s;
+}
+.lang-indicator {
+    padding: 8px;
+    width: fit-content;
+    border-radius: 10px;
+    display: inline-block;
+}
+.lang-elipse {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    display: inline-block;
+}
+.p-lang{
+    font-weight: 700;
+    display: inline;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+hr {
+    background-color: #ffffff00;
+    border: none;
+    margin: 30px 0;
+}
+.new-indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #a020f0;
+    position: absolute;
+    top: -8px;
+    right: -5px;
+
+    animation: mymove 1s;
+    animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 14px;
+    }
+  }

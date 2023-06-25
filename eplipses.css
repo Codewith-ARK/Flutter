@@ -1,0 +1,42 @@
+.c-elipse {
+    background: #2F42EB;
+}
+.c-lang {
+    background-color: hsl(234, 82%, 95%);
+}
+.js-elipse {
+    background: hsl(59, 82%, 55%);
+}
+.js-lang {
+    background: #FAF4D1;
+}
+.py-elipse {
+    background: #3EEB2F;
+}
+.py-lang {
+    background: #D4FAD1;
+}
+.java-lang {
+    background: #FDE5CE;
+}
+.java-elipse {
+    background: #F4841C;
+}
+.html-lang {
+    background:#FAE5D1;
+}
+.html-elipse {
+    background: #EB892F;
+}
+.css-lang {
+    background: #D1DFFA;
+}
+.css-elipse {
+    background: #2F6FEB;
+}
+.flutter-elipse {
+    background: #2F42EB;
+}
+.flutter-lang {
+    background-color: hsl(234, 82%, 95%);
+}

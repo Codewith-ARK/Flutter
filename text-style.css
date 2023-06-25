@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Outfit', sans-serif;
+}
+.title-heading {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+
+    margin-bottom: 0;
+}
+
+.sub-heading {
+    color: #A020F0;
+    border-left: 10px solid #A020F0;
+    padding-left: 14px;
+}
