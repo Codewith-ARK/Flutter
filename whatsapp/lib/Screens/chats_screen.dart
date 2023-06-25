@@ -19,20 +19,21 @@ class _ChatsState extends State<Chats> {
       body: ListView.builder(
         itemCount: chats.length,
         itemBuilder: (context, index) {
+          final data = calls[index];
           return ListTile(
             // Show images from picsum.photos
             leading: CircleAvatar(
               backgroundImage:
                   NetworkImage('https://picsum.photos/seed/$index/200/200'),
             ),
-            title: Text(name[index]),
+            title: Text(data['name']),
             subtitle: Text(chats[index]),
-            trailing: Text('$index:0$index'),
+            trailing: Text(data['time'], style: const TextStyle(fontSize: 12),),
             // Navigate to another widget
             onTap: () {
               Get.to(
                 () => Chat(
-                    name: name[index],
+                    name: data['name'],
                     url: 'https://picsum.photos/seed/$index/200/200'),
               );
             },
@@ -40,7 +41,6 @@ class _ChatsState extends State<Chats> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.add),
         tooltip: "Create a new chat",
         onPressed: () {
           setState(() {
@@ -48,6 +48,7 @@ class _ChatsState extends State<Chats> {
             chats.add('What\'s up Man');
           });
         },
+        child: const Icon(Icons.add),
       ),
     );
   }

@@ -52,11 +52,9 @@ class _StatusesState extends State<Statuses> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.camera_alt),
         tooltip: "Add a status",
-        onPressed: () {
-          
-        },
+        onPressed: () {},
+        child: const Icon(Icons.camera_alt),
       ),
     );
   }

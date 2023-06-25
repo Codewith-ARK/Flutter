@@ -28,17 +28,34 @@ class _WhatsAppState extends State<WhatsApp> {
           appBar: AppBar(
             actions: [
               IconButton(
+                tooltip: "Take a picture",
                 onPressed: () {},
                 icon: const Icon(Icons.camera_alt_rounded),
               ),
               IconButton(
+                tooltip: "Search in chats",
                 onPressed: () {},
                 icon: const Icon(Icons.search),
               ),
-              IconButton(
-                onPressed: () {},
-                icon: const Icon(Icons.more_vert_outlined),
-              ),
+              PopupMenuButton(itemBuilder: (BuildContext context) {
+                return [
+                  const PopupMenuItem(
+                    child: Text("New group"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("New broadcast"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("Linked devices"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("Starred messages"),
+                  ),
+                  const PopupMenuItem(
+                    child: Text("Settings"),
+                  ),
+                ];
+              }),
             ],
             title: const Text('WhatsApp'),
             // tab bar

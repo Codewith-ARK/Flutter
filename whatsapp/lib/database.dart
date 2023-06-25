@@ -1,3 +1,4 @@
+
 List<String> name = [
   'Alia Ali',
   'Usama Sarwar',
@@ -38,4 +39,27 @@ List<String> chats = [
   'Hi',
   'Okay, bye',
   'Khatam, ta ta',
+];
+List<Map<String, dynamic>> calls = [
+  {"number": "+92 312 9122024" ,"name": "A.R.K.", "time": "10:01 AM", "isReceived": true},
+  {"number": "+92 313 9052084" ,"name": "Shahmir", "time": "11:01 AM", "isReceived": false},
+  {"number": "+92 312 9052004" ,"name": "Ahtisham", "time": "01:10 PM", "isReceived": false},
+  {"number": "+92 312 9054024" ,"name": "Naresh", "time": "08:07 AM", "isReceived": true},
+  {"number": "+92 312 9022024" ,"name": "Mehdi", "time": "06:00 PM", "isReceived": false},
+  {"number": "+92 312 3052024" ,"name": "Usama Sarwar", "time": "12:01 PM", "isReceived": true},
+  {"number": "+92 312 8052024" ,"name": "The Man", "time": "12:00 AM", "isReceived": false},
+  {"number": "+92 312 1052024" ,"name": "A.R.K.", "time": "10:01 AM", "isReceived": true},
+  {"number": "+92 312 5052024" ,"name": "Shahmir", "time": "11:01 AM", "isReceived": true},
+  {"number": "+92 312 2053024" ,"name": "Ahtisham", "time": "01:10 PM", "isReceived": false},
+  {"number": "+92 312 1252024" ,"name": "Naresh", "time": "08:07 AM", "isReceived": false},
+  {"number": "+92 312 3402024" ,"name": "Mehdi", "time": "06:00 PM", "isReceived": false},
+  {"number": "+92 312 9052024" ,"name": "Usama Sarwar", "time": "12:01 PM", "isReceived": true},
+  {"number": "+92 312 9092024" ,"name": "The Man", "time": "12:00 AM", "isReceived": true},
+  {"number": "+92 312 9052024" ,"name": "A.R.K.", "time": "10:01 AM", "isReceived": true},
+  {"number": "+92 312 9232024" ,"name": "Shahmir", "time": "11:01 AM", "isReceived": true},
+  {"number": "+92 312 9052014" ,"name": "Ahtisham", "time": "01:10 PM", "isReceived": false},
+  {"number": "+92 312 9232024" ,"name": "Naresh", "time": "08:07 AM", "isReceived": false},
+  {"number": "+92 312 9222024" ,"name": "Mehdi", "time": "06:00 PM", "isReceived": false},
+  {"number": "+92 312 9432024" ,"name": "Usama Sarwar", "time": "12:01 PM", "isReceived": true},
+  {"number": "+92 312 9222024" ,"name": "The Man", "time": "12:00 AM", "isReceived": true},
 ];
